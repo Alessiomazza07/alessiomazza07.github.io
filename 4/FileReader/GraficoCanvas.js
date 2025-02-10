@@ -6,9 +6,7 @@ function apri(input){
     let reader = new FileReader();
     reader.readAsText(file);
     let m=[];
-
     reader.onload = function(){
-
       let content=reader.result;
       let v=content.split("\n");
       for(let i=0;i<v.length;i++){
@@ -33,14 +31,17 @@ function apri(input){
                 tableCol.className="bottom-left";
               else if(c==m[0].length-1)
                 tableCol.className="bottom-right";
+            }
+            let data=m[r][c].substring(1,m[r][c].length-1);
+            tableCol.innerText=data;
+            tableRow.append(tableCol);
           }
-          let data=m[r][c].substring(1,m[r][c].length-1);
-          tableCol.innerText=data;
-          tableRow.append(tableCol);
+          table.append(tableRow);
         }
-        table.append(tableRow);
-      }
-      container.append(table);
+        container.append(table);
+        let h1=document.createElement("h1");
+        h1.innerText="Grafico";
+        container.append(h1);
       const xValues = [];
       const yValues = [];
       for(let i=1;i<m.length;i++){
@@ -49,7 +50,6 @@ function apri(input){
       }
       var width=800, height=300;
       var kw=width/(max(xValues)-min(xValues)), kh=height/(max(yValues)-0);
-      //var kw=width/xValues[xValues.length-1]-xValues[0], kh=height/(yValues[max]-yValues[min]);
       const canvas = document.getElementById("myCanvas");
       const ctx = canvas.getContext("2d");
       ctx.beginPath();
