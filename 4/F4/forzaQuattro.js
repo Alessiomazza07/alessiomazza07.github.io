@@ -85,7 +85,8 @@ function checkwin_diag(){
     for(var dir=-1;i<2;i+=2)
         for(var i=0;i<rows-3;i++){
             len=0;
-            for(var j=rows-3;j<cols;j++)
+            x=Math.round(1.5*(dir+1))
+            for(var j=x;j<4+x;j++)
                 for(var w=0;w<4;w++){
                     if(table[i+w][j+(w*dir)]==g){
                         len++;
