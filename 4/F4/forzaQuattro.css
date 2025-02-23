@@ -13,9 +13,12 @@ table{
     width: fit-content;
     background-color: rgb(44, 44, 255);
     margin: 0 auto;
-    border-bottom:rgb(44, 44, 255) 1rem solid;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+    border: rgb(44, 44, 255) 1.2rem solid;
+    border-left-width: 0.3rem;
+    border-right-width: 0.3rem;
+    border-top-width: 0.5rem;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 button{
     border-radius: 100%;
