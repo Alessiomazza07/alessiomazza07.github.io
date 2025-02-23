@@ -1,7 +1,4 @@
-let rows=6,cols=7;
-let table=[];
-let g=-1;
-let vittoria=false, tie=false;
+let rows=6, cols=7, table=[], g=-1, vittoria=false, tie=false;
 for(var r=0;r<rows;r++){
     table[r]=[];
     for(var c=0;c<cols;c++){
@@ -81,19 +78,14 @@ function checkwin_vert(){
     return false;
 }
 function checkwin_diag(){
-    var len;
-    for(var dir=-1;i<2;i+=2)
+    for(var dir=-1;dir<2;dir+=2)
         for(var i=0;i<rows-3;i++){
-            len=0;
             x=Math.round(1.5*(dir+1))
             for(var j=x;j<4+x;j++)
                 for(var w=0;w<4;w++){
-                    if(table[i+w][j+(w*(-1)*dir)]==g){
-                        len++;
-                        if(len>=4)
-                            return true;
-                    }else
-                        len=0;
+                    if(table[i+w][j+(w*(-1)*dir)]!=g)
+                        break;
+                    if(w==3) return true;
                 }
         }
     return false;
