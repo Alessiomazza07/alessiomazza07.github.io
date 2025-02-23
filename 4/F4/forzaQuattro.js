@@ -88,7 +88,7 @@ function checkwin_diag(){
             x=Math.round(1.5*(dir+1))
             for(var j=x;j<4+x;j++)
                 for(var w=0;w<4;w++){
-                    if(table[i+w][j+(w*dir)]==g){
+                    if(table[i+w][j+(w*(-1)*dir)]==g){
                         len++;
                         if(len>=4)
                             return true;
