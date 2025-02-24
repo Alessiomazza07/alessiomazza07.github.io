@@ -1,4 +1,5 @@
 body{
+    font-size: 1.8rem;
     margin: 0;
     background-color: #333;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -12,7 +13,7 @@ h1{
 table{
     width: fit-content;
     background-color: rgb(44, 44, 255);
-    margin: 0 auto;
+    margin: 2rem auto 0;
     border: rgb(44, 44, 255) 1.5rem solid;
     border-left-width: 0.3rem;
     border-right-width: 0.3rem;
