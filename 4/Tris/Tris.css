@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    background-color: #333;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    font-size: 2rem;
+}
+h1{
+    margin: 1rem auto;
+    width: fit-content;
+    color:aliceblue;
+}
+table#tris{
+    width: fit-content;
+    background-color: transparent;
+    margin: 4rem auto 0;
+    border-collapse: collapse;
+}
+table#tris td{
+    width: fit-content;
+    border: 6px solid aliceblue;
+}
+table#tris button{
+    width: 6rem;
+    height: 6rem;
+    background-color: #333;
+    padding: 0;
+    border: 0;
+    font-size: 4rem;
+}
