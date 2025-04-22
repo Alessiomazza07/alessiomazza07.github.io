@@ -1,0 +1,44 @@
+[
+    {
+    "id": 1,
+    "nome": "Prodotto A",
+    "descrizione":"",
+    "immagine":"",
+    "prezzo": 10.99
+    },
+    {
+    "id": 2,
+    "nome": "Prodotto B",
+    "descrizione":"",
+    "immagine":"",
+    "prezzo": 20.50
+    },
+    {
+    "id": 3,
+    "nome": "Prodotto C",
+    "descrizione":"",
+    "immagine":"",
+    "prezzo": 15.75
+    },
+    {
+    "id": 4,
+    "nome": "Prodotto D",
+    "descrizione":"",
+    "immagine":"",
+    "prezzo": 10.99
+    },
+    {
+    "id": 5,
+    "nome": "Prodotto E",
+    "descrizione":"",
+    "immagine":"",
+    "prezzo": 20.50
+    },
+    {
+    "id": 6,
+    "nome": "Prodotto F",
+    "descrizione":"",
+    "immagine":"",
+    "prezzo": 15.75
+    }
+]
