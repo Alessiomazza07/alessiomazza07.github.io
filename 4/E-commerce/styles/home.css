@@ -1,0 +1,63 @@
+@import url('layout.css');
+@import url('navbar.css');
+*{
+    box-sizing: border-box;
+}
+div.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.5rem 3rem;
+}
+:root{
+    --radius-img-product: 14px
+}
+button.product{
+    color: var(--light-color);
+    width: 28%; 
+    background-color: var(--dark-color);
+    /* display: flex; */
+    flex-direction: column;
+    flex-grow: 1;
+    border: none;
+    border-radius: var(--radius-img-product);
+    margin: 1rem;
+    padding: 0;
+}
+.image{
+    width: 100%;
+    border-top-left-radius: var(--radius-img-product);
+    border-top-right-radius: var(--radius-img-product);
+}
+a.nome{
+    text-decoration: none;
+    text-align: left;
+    margin: 0.5rem 0 0.5rem 1rem;
+    font-size: 1.5rem;
+    transition: all ease-in-out 150ms;
+}
+a.nome:hover{
+    color: var(--secondary-color);
+}
+nav.navbar a:visited{
+    color:var(--light-color);
+}
+.prezzo{
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+button.add{
+    background-color: var(--action-color);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    transition: all ease-in-out 150ms;
+}
+button.add:hover{
+    background-color: var(--light-action-color);
+}
