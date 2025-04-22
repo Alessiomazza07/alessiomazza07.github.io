@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <script src="login.js" defer></script>
+    <title>Login</title>
+    <style>
+        label {
+            width: 95%;
+        }
+        form.form {
+            padding: 1rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" >
+        <p class="title">Login</p>
+        <div class="flname">
+            <label>
+                <input required="" placeholder="Firstname" type="text" class="input" id="first-name">
+            </label>
+            <label>
+                <input required="" placeholder="Lastname" type="text" class="input" id="last-name">
+            </label>
+        </div>
+        <label>
+            <input required="" placeholder="User" type="user" class="input" id="user">
+        </label>
+        <label>
+            <input required="" placeholder="Password" type="password" class="input" id="password">
+        </label>
+        <label>
+            <input required="" placeholder="Confirm password" type="password" class="input" id="confirm-password">
+        </label>
+        <button onclick="login(event)" class="submit">Submit</button>
+        <p class="problems"></p>
+    </form>
+</body>
+</html>
