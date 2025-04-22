@@ -1,0 +1,57 @@
+[
+    {
+        "nome": "A",
+        "cognome": "A",
+        "user": "A",
+        "password": "a",
+        "email": "",
+        "telefono": "",
+        "citta": "",
+        "cap": "",
+        "indirizzo": ""
+    },
+    {
+        "nome": "B",
+        "cognome": "B",
+        "user": "B",
+        "password": "b",
+        "email": "",
+        "telefono": "",
+        "citta": "",
+        "cap": "",
+        "indirizzo": ""
+    },
+    {
+        "nome": "C",
+        "cognome": "C",
+        "user": "C",
+        "password": "c",
+        "email": "",
+        "telefono": "",
+        "citta": "",
+        "cap": "",
+        "indirizzo": ""
+    },
+    {
+        "nome": "D",
+        "cognome": "D",
+        "user": "D",
+        "password": "d",
+        "email": "",
+        "telefono": "",
+        "citta": "",
+        "cap": "",
+        "indirizzo": ""
+    },
+    {
+        "nome": "E",
+        "cognome": "E",
+        "user": "E",
+        "password": "e",
+        "email": "",
+        "telefono": "",
+        "citta": "",
+        "cap": "",
+        "indirizzo": ""
+    }
+]   
