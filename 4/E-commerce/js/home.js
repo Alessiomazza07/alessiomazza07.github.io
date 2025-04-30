@@ -3,7 +3,7 @@ if(localStorage.getItem('logged')=='false'){
   localStorage.removeItem('user');
   window.location.href='login.html';
 }
-fetch('../json/prodotti.json')
+fetch('https://alessiomazza07.github.io/4/E-commerce/json/prodotti.json')
 .then(response => {
 if (!response.ok)
   console.log('Problema con la fetch');

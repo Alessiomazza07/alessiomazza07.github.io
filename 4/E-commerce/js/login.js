@@ -20,13 +20,13 @@ Formato oggetto->vettore
   "cap": "",
   "indirizzo": ""
 */
-fetch('../json/users.json')
+fetch('https://alessiomazza07.github.io/4/E-commerce/json/users.json')
 .then(response => {
     if (!response.ok)
       console.log('Problema con la fetch');
     return response.json();
   })
-then(users => {
+.then(users => {
       for(let i = 0; i < users.length; i++){
           if(eq(persona,users[i])){
               localStorage.setItem('user',persona);
