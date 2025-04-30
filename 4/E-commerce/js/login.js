@@ -7,7 +7,7 @@ function login(event){
   const confirm_password = document.getElementById('confirm-password').value;
   if(password!==confirm_password) {passwordProblem();return;}
   else passwordResolve();
-  const persona=[nome,cognome,user,password,"","","","",""];
+  const persona=[nome,cognome,user,password,"","","","",""]; 
 /*
 Formato oggetto->vettore
   "nome" :nome,
