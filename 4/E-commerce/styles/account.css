@@ -1,0 +1,59 @@
+@import url('layout.css');
+@import url('navbar.css');
+*{
+    box-sizing: border-box;
+}
+.title{
+    margin: 1rem auto;
+    width: fit-content;
+    color:#ffffffe1;
+    font-size: 2.5rem;
+}
+.container{
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+}
+div.data{
+    display:flex;
+    flex-direction: row;
+    gap: 0;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    color: #ffffffe1;
+    font-size: 2rem;
+    border-radius: 3px;
+    margin: 2rem 0;
+}
+.data input{
+    margin-left: .5rem;
+    font-size: 1.4rem;
+}
+.change{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #04AA6D;
+    padding: 2px;
+    color: white;
+    transition: all .25s ease-in-out;
+    font-size: 1.1rem;
+    padding: 0 .5rem;
+}
+.change:hover{
+    background-color: #088758;
+}
+.logout{
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: rgb(255, 45, 45);
+    color: white;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.logout:hover{
+    background-color: rgb(255, 85, 85);
+    transform: translateY(-2px);
+}

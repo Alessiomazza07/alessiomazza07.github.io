@@ -1,0 +1,15 @@
+@import url('layout.css');
+@import url('navbar.css');
+*{
+    box-sizing: border-box;
+}
+div.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.5rem 3rem;
+}
+:root{
+    --radius-img-product: 14px
+}
