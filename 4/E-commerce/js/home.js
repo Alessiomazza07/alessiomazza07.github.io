@@ -3,7 +3,7 @@ if(localStorage.getItem('logged')=='false'){
   localStorage.removeItem('user');
   window.location.href='login.html';
 }
-fetch('./prodotti.json')
+fetch('../json/prodotti.json')
 .then(response => {
 if (!response.ok)
   console.log('Problema con la fetch');
