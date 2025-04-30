@@ -1,60 +1,3 @@
-const users=[
-  {
-      nome: "A",
-      cognome: "A",
-      user: "A",
-      password: "a",
-      email: "",
-      telefono: "",
-      citta: "",
-      cap: "",
-      indirizzo: ""
-  },
-  {
-      nome: "B",
-      cognome: "B",
-      user: "B",
-      password: "b",
-      email: "",
-      telefono: "",
-      citta: "",
-      cap: "",
-      indirizzo: ""
-  },
-  {
-      nome: "C",
-      cognome: "C",
-      user: "C",
-      password: "c",
-      email: "",
-      telefono: "",
-      citta: "",
-      cap: "",
-      indirizzo: ""
-  },
-  {
-      nome: "D",
-      cognome: "D",
-      user: "D",
-      password: "d",
-      email: "",
-      telefono: "",
-      citta: "",
-      cap: "",
-      indirizzo: ""
-  },
-  {
-      nome: "E",
-      cognome: "E",
-      user: "E",
-      password: "e",
-      email: "",
-      telefono: "",
-      citta: "",
-      cap: "",
-      indirizzo: ""
-  }
-];
 function login(event){
   event.preventDefault();
   const nome = document.getElementById('first-name').value;
@@ -77,14 +20,13 @@ Formato oggetto->vettore
   "cap": "",
   "indirizzo": ""
 */
-  
-  fetch('./users.json')
-  .then(response => {
+fetch('../json/users.json')
+.then(response => {
     if (!response.ok)
       console.log('Problema con la fetch');
     return response.json();
   })
-  .then(users => {
+then(users => {
       for(let i = 0; i < users.length; i++){
           if(eq(persona,users[i])){
               localStorage.setItem('user',persona);
@@ -94,11 +36,10 @@ Formato oggetto->vettore
           window.location.href = '../home.html'; 
           }
       } 
-  })
-  .catch(error => {
+})
+.catch(error => {
     console.error('Errore:'+error);
-  });
-  
+});
 }
 function eq(a,b){
   return a[0] === b.nome && a[1] === b.cognome && a[2] === b.user && a[3] === b.password;
