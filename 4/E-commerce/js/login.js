@@ -33,7 +33,7 @@ fetch('https://alessiomazza07.github.io/4/E-commerce/json/users.json')
           localStorage.setItem('logged',true);
           localStorage.removeItem('cart');
           clearForm();
-          window.location.href = '../home.html'; 
+          window.location.href = './home.html'; 
           }
       } 
 })
