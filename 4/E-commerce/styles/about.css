@@ -1,5 +1,41 @@
 @import url('layout.css');
-@import url('navbar.css');
 *{
     box-sizing: border-box;
+}
+h1.title{
+    color: var(--light-color);
+    width: fit-content;
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 3rem auto 4rem;
+}
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    margin: 0 0 5rem;
+}
+.content h2.sub-title{
+    color: var(--light-color);
+    font-size: 1.75rem;
+    width: 90%;
+    margin: 1rem auto;
+}
+.content p.paragraph{
+    color: #a8bbc3;
+    width: 90%;
+    margin: 1rem auto 2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+.content img{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 22rem;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 3px #000000f5;
 }

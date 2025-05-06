@@ -1,0 +1,105 @@
+@import url('layout.css');
+html{
+    overflow-x: hidden;
+}
+.form {
+    margin: 2rem auto;
+    width: fit-content;
+    height: fit-content;
+    background: #ffffff;
+    border-radius: 26px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.form-title{
+    color: var(--secondary-color);
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+hr{
+    border: solid var(--secondary-color) 1.5px;
+    width: 100%;
+    margin: 0;
+}
+.form-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.input_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.split {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 15px;
+}
+.split input {
+    width: 95%;
+}
+.input_label {
+    font-size: 10px;
+    color: #8b8e98;
+    font-weight: 600;
+}
+.input_field {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #e6e6e6;
+    border: 1px solid #e5e5e500;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+.input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+} 
+.pay {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color); 
+    gap: 8px;
+    border: none;
+    color: white; 
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin: auto;
+}
+.svgIcon {
+    width: 16px;
+}
+.svgIcon path {
+    fill: white;
+    transition: all 0.3s; 
+}
+.pay:hover {
+    background-color: white;
+    color: royalblue;
+    box-shadow:
+      0px 0px 0px 2px white,
+      0px 0px 0px 4px var(--secondary-color);
+}
+.pay:hover .svgIcon path{
+    fill: royalblue;
+}
+.pay:active {
+    transform: translateY(2px);
+    transition: transform 0.1s;
+}

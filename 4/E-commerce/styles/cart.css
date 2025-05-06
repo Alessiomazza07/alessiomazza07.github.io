@@ -1,5 +1,117 @@
 @import url('layout.css');
-@import url('navbar.css');
 *{
     box-sizing: border-box;
+}
+h1.title{
+    width:fit-content;
+    margin: 1rem auto 3rem;
+    color: var(--light-color);
+    font-size: 3rem;
+}
+p.void{
+    font-size: 2rem;
+    width: fit-content;
+    margin: 5rem auto 1rem;
+    color: var(--light-color);
+}
+a.back{
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    text-decoration: underline;
+    width: fit-content;
+    margin: 0 auto;
+}
+.container{
+    margin: 1rem 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.prodotto{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--light-color);
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+}
+.nome{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+.prezzo{
+    font-size: 1.3rem;
+}
+.panel button,.panel input{
+    color: var(--light-color);
+}
+.increment{
+    background-color: var(--secondary-color);
+    border: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    transition: all .3s ease;
+}
+input.quantita{
+    background-color: transparent;
+    border:0;
+    outline: 0;
+    width: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.decrement{
+    background-color: var(--secondary-color);
+    border: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    transition: all .3s ease;
+}
+.increment:hover,.decrement:hover{
+    background-color: rgb(56, 90, 194);
+}
+hr{
+    width: 90%;
+    border: solid var(--light-color) 1px;
+}
+.total{
+    margin: 3rem 0 1rem;
+    font-size: 1.75rem;
+    background-color: white;
+    width: fit-content;
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: solid var(--secondary-color) 1.5px;
+}
+.order{
+    width: fit-content;
+    background-color: #04AA6D;
+    color:white;
+    margin: 1rem auto;
+    border: 0;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 10px 20px;
+    transition: background-color .3s ease;
+}
+.order:hover{
+    background-color: #088758;
+    border: solid #04d085 2px;
+}
+.order i{
+    font-size: 1.8rem;
+    font-weight: 600;
 }

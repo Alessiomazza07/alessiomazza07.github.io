@@ -1,5 +1,4 @@
 @import url('layout.css');
-@import url('navbar.css');
 *{
     box-sizing: border-box;
 }
@@ -17,18 +16,22 @@ button.product{
     color: var(--light-color);
     width: 28%; 
     background-color: var(--dark-color);
-    /* display: flex; */
+    display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
     flex-grow: 1;
     border: none;
     border-radius: var(--radius-img-product);
     margin: 1rem;
     padding: 0;
+    flex: 0 0 auto;
 }
 .image{
     width: 100%;
+    aspect-ratio: 1/1;
     border-top-left-radius: var(--radius-img-product);
     border-top-right-radius: var(--radius-img-product);
+    margin-bottom: 1rem;
 }
 a.nome{
     text-decoration: none;
@@ -40,21 +43,20 @@ a.nome{
 a.nome:hover{
     color: var(--secondary-color);
 }
-nav.navbar a:visited{
-    color:var(--light-color);
-}
 .prezzo{
     text-align: left;
-    margin-left: 1rem;
+    margin: 1rem 0 0 1rem;
     font-size: 1.5rem;
 }
 button.add{
+    width: fit-content;
     background-color: var(--action-color);
     border: none;
     border-radius: 20px;
     padding: 8px 16px;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    margin: 1rem auto;
     font-size: 1.3rem;
     transition: all ease-in-out 150ms;
 }

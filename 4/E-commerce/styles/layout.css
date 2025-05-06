@@ -1,6 +1,6 @@
 :root{
-    --primary-color: #1B3665;
-    --secondary-color: royalblue;
+    --primary-color: #284f91;
+    --secondary-color: #4169e1;
     --action-color: #68B35A;
     --light-action-color:#88d17b;
     --dark-color: #1B1B1B;
@@ -12,4 +12,194 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+/*navbar*/
+nav.navbar{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--dark-color);
+    position: static;
+    margin: 0;
+    padding: 10px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.navbar a{
+    color: var(--light-color);
+    transition: all ease-in-out 350ms;
+    font-size: 1.7rem;
+}
+nav.navbar i{
+    transition: all ease-in-out 350ms;
+    font-size: 1.1rem;
+}
+nav.navbar i.cart{
+    font-size: 30px;
+    padding: 0 2px;
+}
+a:visited{
+    color: var(--light-color);
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+div.search{
+    padding:0;
+    display: flex;
+    flex-direction: row;
+}
+:root{
+    --r: 8px;
+    --pad: 12px;
+}
+div.search i{
+    background-color: var(--secondary-color);
+    border-top-left-radius: var(--r);
+    border-bottom-left-radius: var(--r);
+    padding: calc(var(--pad) - 2px);
+    font-size: 24px;
+}
+div.search input{
+    font-size: 1.1rem;
+    color: lightslategray;
+    padding: var(--pad);
+    margin: 0;
+    border: none;
+    border-top-right-radius: var(--r);
+    border-bottom-right-radius: var(--r);
+}
+div.search input{
+    color: rgb(98, 109, 120);
+    padding: var(--pad);
+    margin: 0;
+    border: none;
+    border-top-right-radius: var(--r);
+    border-bottom-right-radius: var(--r);
+}
+nav.navbar a:hover {
+    transform: translateY(-3px);
+    color: var(--secondary-color);
+}
+button.search{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    z-index: 1;
+    border: none;
+}
+/*footer*/
+footer{
+    width: 100%;
+    height: 17rem;
+    /*position:absolute;
+    bottom:0;
+    left:0;*/
+    background-color: var(--dark-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 60% 15% 15%;
+    column-gap: 3rem;
+    row-gap: 0.75rem;
+    padding: 1rem 1rem 0.5rem 3rem;
+    justify-content: space-around;
+    color: var(--light-color);
+}
+footer a{
+    color: var(--light-color);
+    text-decoration: none;
+}
+footer .indirizzo{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+footer .diritti{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+footer .diritti p{
+    text-align: center;
+}
+footer .social{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+footer .social h3{
+    font-size: 1.5rem;
+}
+footer .social a{
+    margin-top: 0.75rem;
+    width: fit-content;
+}
+footer .social p{
+    width: fit-content;
+    float: left;
+    margin: 0;
+    font-size: 1.2rem;
+}
+footer .social i{
+    float: left;
+    margin-right: 0.5rem;
+}
+footer .logo{
+    margin-top: 1rem;
+}
+footer .contatti{
+    justify-items: center;
+}
+footer .contatti h2{
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+footer .contatti a{
+    margin-top: 1rem;
+}
+footer .contatti i{
+    float: left;
+    margin-right: 0.5rem;
+}
+footer .contatti p{
+    float: left;
+    margin: 0;
+}
+@media (max-width: 870px) {
+    footer a p{
+        display: none;
+        align-items: center;
+    }
+    footer .social{
+        display: block;
+        justify-items: center;
+    }
+    footer .social a{
+        margin-top: 0.75rem;
+        width: fit-content;
+    }
+    footer .social p{
+        width: fit-content;
+        float: left;
+    }
+    footer .social i{
+        float: left;
+        margin-right: 1rem;
+    }
+    footer .social h3{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 1005px){
+    footer .contatti a{
+        margin-top: 2rem;
+    }
+    footer .contatti p{
+        display: none;
+        align-items: center;
+    }
 }

@@ -1,15 +1,100 @@
 @import url('layout.css');
-@import url('navbar.css');
 *{
     box-sizing: border-box;
 }
 div.container{
     display: flex;
+    color: var(--light-color);
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    margin: 1.5rem 3rem;
+    margin: 1rem 1.5rem;
+    padding: 0;
 }
 :root{
-    --radius-img-product: 14px
+    --radius-img-product: 14px;
+}
+.product{
+    display: grid;
+    color: var(--light-color);
+    justify-content: center;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    grid-template-rows: auto;
+    max-width: 100%;
+}
+img.image{
+    width: 30rem;
+    border-radius: 15px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+.text div,.text button,.text input{
+    width: fit-content;
+}
+.nome{
+    font-size: 3rem;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+.descrizione{
+    font-size: 1.4rem;
+    width: 80%;
+    margin: 2rem auto;
+}
+.prezzo{
+    font-size: 3rem;
+    align-self: end;
+    margin-right: 2rem;
+}
+.quantita{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:10px;
+    margin-bottom:1rem;
+}
+.quantita label{
+    font-size: 1.3rem;
+    align-self: center;
+}
+.text input{
+    text-align: center;
+    font-size: 1.3rem;
+    width: 15%;
+    height: fit-content;
+    background-color: #444;
+    border-radius: 4px;
+    color: var(--light-color);
+}
+button.add{
+    background-color: var(--action-color);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 1rem;
+    font-size: 1.3rem;
+    transition: all ease-in-out 150ms;
+}
+button.add:hover{
+    background-color: var(--light-action-color);
+}
+button.buy{
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 1.3rem;
+    margin: 1rem;
+    width: 8.2rem;
+    transition: all ease-in-out 150ms;
+}
+button.buy:hover{
+    background-color: #668cff;
 }
