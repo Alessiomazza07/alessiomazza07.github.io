@@ -4,139 +4,140 @@
         "nome": "Smartphone 5G",
         "descrizione": "Smartphone di ultima generazione con connettività 5G, fotocamera da 108 MP e display AMOLED.",
         "prezzo": "699.99",
-        "immagine": "https://example.com/images/smartphone_5g.jpg"
+        "immagine": "00.jpg"
     },
     {
         "id": 1,
         "nome": "Tablet Android",
         "descrizione": "Tablet Android con schermo da 10 pollici, ideale per navigare, guardare film e giocare.",
         "prezzo": "299.99",
-        "immagine": "https://example.com/images/tablet_android.jpg"
+        "immagine": "01.jpg"
     },
     {
         "id": 2,
         "nome": "Cuffie Wireless",
         "descrizione": "Cuffie wireless con cancellazione del rumore, perfette per ascoltare musica in alta qualità.",
         "prezzo": "149.99",
-        "immagine": "https://example.com/images/cuffie_wireless.jpg"
+        "immagine": "02.jpg"
+        
     },
     {
         "id": 3,
         "nome": "Smartwatch",
         "descrizione": "Smartwatch con monitoraggio della salute, notifiche e GPS integrato per attività all'aperto.",
         "prezzo": "199.99",
-        "immagine": "https://example.com/images/smartwatch.jpg"
+        "immagine": "03.jpg"
     },
     {
         "id": 4,
         "nome": "Laptop Gaming",
         "descrizione": "Laptop gaming ad alte prestazioni con scheda grafica dedicata e display ad alta frequenza di aggiornamento.",
         "prezzo": "1299.99",
-        "immagine": "https://example.com/images/laptop_gaming.jpg"
+        "immagine": "04.jpg"
     },
     {
         "id": 5,
         "nome": "Televisore 4K",
         "descrizione": "Televisore 4K Ultra HD con supporto HDR e smart TV integrata per streaming e app.",
         "prezzo": "799.99",
-        "immagine": "https://example.com/images/televisore_4k.jpg"
+        "immagine": "05.jpg"
     },
     {
         "id": 6,
         "nome": "Altoparlante Bluetooth",
         "descrizione": "Altoparlante Bluetooth portatile con suono potente e batteria a lunga durata, ideale per feste.",
         "prezzo": "89.99",
-        "immagine": "https://example.com/images/altoparlante_bluetooth.jpg"
+        "immagine": "06.jpg"
     },
     {
         "id": 7,
         "nome": "Webcam HD",
         "descrizione": "Webcam HD con risoluzione 1080p, perfetta per videoconferenze e streaming.",
         "prezzo": "49.99",
-        "immagine": "https://example.com/images/webcam_hd.jpg"
+        "immagine": "07.jpg"
     },
     {
         "id": 8,
         "nome": "Hard Disk Esterno",
         "descrizione": "Hard disk esterno da 2TB, ideale per il backup di dati e archiviazione di file multimediali.",
         "prezzo": "79.99",
-        "immagine": "https://example.com/images/hard_disk_esterno.jpg"
+        "immagine": "08.jpg"
     },
     {
         "id": 9,
         "nome": "Stampante Multifunzionale",
         "descrizione": "Stampante multifunzionale con funzioni di scansione e copia, perfetta per uso domestico e ufficio.",
         "prezzo": "129.99",
-        "immagine": "https://example.com/images/stampante_multifunzionale.jpg"
+        "immagine": "09.png"
     },
     {
         "id": 10,
         "nome": "Router Wi-Fi",
         "descrizione": "Router Wi-Fi ad alta velocità con copertura estesa, ideale per streaming e gaming online.",
         "prezzo": "69.99",
-        "immagine": "https://example.com/images/router_wifi.jpg"
+        "immagine": "10.jpg"
     },
     {
         "id": 11,
         "nome": "Caricatore Wireless",
         "descrizione": "Caricatore wireless veloce compatibile con tutti i dispositivi abilitati Qi.",
         "prezzo": "29.99",
-        "immagine": "https://example.com/images/caricatore_wireless.jpg"
+        "immagine": "11.jpg"
     },
     {
         "id": 12,
         "nome": "Microfono USB",
         "descrizione": "Microfono USB di alta qualità, ideale per registrazioni audio e streaming.",
         "prezzo": "99.99",
-        "immagine": "https://example.com/images/microfono_usb.jpg"
+        "immagine": "12.webp"
     },
     {
         "id": 13,
         "nome": "Telecamera di Sicurezza",
         "descrizione": "Telecamera di sicurezza Wi-Fi con visione notturna e rilevamento del movimento.",
         "prezzo": "89.99",
-        "immagine": "https://example.com/images/telecamera_sicurezza.jpg"
+        "immagine": "13.webp"
     },
     {
         "id": 14,
         "nome": "Ventilatore USB",
         "descrizione": "Ventilatore portatile USB, ideale per rinfrescare l'aria in ufficio o a casa.",
         "prezzo": "19.99",
-        "immagine": "https://example.com/images/ventilatore_usb.jpg"
+        "immagine": "14.jpg"
     },
     {
         "id": 15,
         "nome": "Cavo HDMI",
         "descrizione": "Cavo HDMI ad alta velocità, perfetto per collegare dispositivi a TV e monitor.",
         "prezzo": "9.99",
-        "immagine": "https://example.com/images/cavo_hdmi.jpg"
+        "immagine": "15.jpg"
     },
     {
         "id": 16,
         "nome": "Supporto per Laptop",
         "descrizione": "Supporto regolabile per laptop, progettato per migliorare la postura e il comfort durante l'uso.",
         "prezzo": "29.99",
-        "immagine": "https://example.com/images/supporto_laptop.jpg"
+        "immagine": "16.png"
     },
     {
         "id": 17,
         "nome": "Cuffie Gaming",
         "descrizione": "Cuffie gaming con microfono integrato e suono surround, perfette per sessioni di gioco prolungate.",
         "prezzo": "69.99",
-        "immagine": "https://example.com/images/cuffie_gaming.jpg"
+        "immagine": "17.jpg"
     },
     {
         "id": 18,
         "nome": "Smart TV Box",
         "descrizione": "Smart TV Box per trasformare qualsiasi TV in una smart TV, con accesso a tutte le app di streaming.",
         "prezzo": "49.99",
-        "immagine": "https://example.com/images/smart_tv_box.jpg"
+        "immagine": "18.webp"
     },
     {
         "id": 19,
         "nome": "Lampada LED Smart",
         "descrizione": "Lampada LED smart controllabile tramite app, ideale per creare atmosfere personalizzate.",
         "prezzo": "39.99",
-        "immagine": "https://example.com/images/lampada_led_smart.jpg"
+        "immagine": "19.jpg"
     }
 ]

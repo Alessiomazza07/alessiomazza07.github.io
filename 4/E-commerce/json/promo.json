@@ -1,0 +1,18 @@
+[
+    {
+        "code": "UPDATE1.0",
+        "discount": 10
+    },
+    {
+        "code": "SUPPORT",
+        "discount": 15
+    },
+    {
+        "code": "FREEDISCOUNT",
+        "discount": 20
+    },
+    {
+        "code": "REALOG",
+        "discount": 50
+    }
+]
