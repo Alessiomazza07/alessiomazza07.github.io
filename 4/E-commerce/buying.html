@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/buying.css">
+    <script src="https://kit.fontawesome.com/e657377ddb.js" crossorigin="anonymous"></script>
+    <script src="./js/buying.js" defer></script>
+    <title>Buying</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="alessiomazza07.github.io/4/E-commerce/home.html" class="navlink">H<i class="fa-solid fa-house"></i>me</a>
+        <a href="alessiomazza07.github.io/4/E-commerce/about.html" class="navlink">Ab<i class="fa-solid fa-circle-info"></i>ut</a>
+        <div class="search">
+            <button class="search" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" class="search" placeholder="Search...">
+        </div>
+        <a href="alessiomazza07.github.io/4/E-commerce/account.html" class="navlink">Acc<i class="fa-solid fa-circle-user"></i>unt</a>
+        <a href="alessiomazza07.github.io/4/E-commerce/cart.html" class="navlink"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </nav>
+    <div class="container">
+    <form class="form">
+        <p class="form-title">Paying: </p>
+        <hr>
+        <div class="form-info">
+            <div class="input_container">
+                <label class="input_label">Card holder first name</label>
+                <input placeholder="Enter your first name" type="text" class="input_field" id="first-name" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">Card holder last name</label>
+                <input placeholder="Enter your last name" type="text" class="input_field" id="last-name" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">Email address</label>
+                <input placeholder="Enter your email" type="email" class="input_field" id="email" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">Password</label>
+                <input placeholder="Enter your password" type="password" class="input_field" id="password" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">Phone number</label>
+                <input placeholder="+00 000 000 0000" type="number" class="input_field" id="number" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">City</label>
+                <input placeholder="Enter your city" type="text" class="input_field" id="city" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">CAP</label>
+                <input placeholder="00000" type="number" class="input_field" id="cap" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">Address</label>
+                <input placeholder="Enter your address" type="text" class="input_field" id="address" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">Card Number</label>
+                <input placeholder="0000 0000 0000 0000" type="number" class="input_field" id="card-number" required/>
+            </div>
+            <div class="input_container">
+                <label class="input_label">Expiry Date / CVV</label>
+                <div class="split">
+                    <input placeholder="01/29" type="text" class="input_field" id="expiry-date" required/>
+                    <input placeholder="CVV" type="number" class="input_field" id="cvv" required/>
+                </div>
+            </div>
+            <hr>
+            <button class="pay" onclick="pay(event)">
+            Pay
+            <svg viewBox="0 0 576 512" class="svgIcon">
+                <path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 
+                144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 
+                96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 
+                304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 
+                0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path>
+            </svg>
+            </button>
+        </div>
+    </form>
+    </div>
+    <footer>
+        <div class="logo">
+            <h1>E-commerce<br>Website</h1>
+        </div>
+        <div class="contatti">
+            <h2>Contatti</h2>
+            <a href="mailto: mazza.alessio@itiscannizaro.edu.it">
+                <i class="fa-solid fa-envelope"></i><p> mazza.alessio@itiscannizaro.edu.it</p>
+            </a>
+        </div>
+        <div class="social">
+            <h3>Follow us on</h3>
+            <a href="https://www.facebook.com/share/18XKKMzULi/"><i class="fa-brands fa-facebook"></i> <p>Facebook</p></a>
+            <a href="https://x.com/AlessioMazza20?t=I8jaFxF---Z-BsS_F0Vgbw&s=09"><i class="fa-brands fa-square-twitter"></i> <p>X</p></a>
+            <a href="https://www.instagram.com/ale.maz1907?igsh=bmk5MDZwNmk4YnI4"><i class="fa-brands fa-instagram"></i> <p>Instagram</p></a>
+            <a href="https://www.tiktok.com/@alemaz1907?_t=ZN-8uJgzEY6CIQ&_r=1"><i class="fa-brands fa-tiktok"></i> <p>TikTok</p></a>
+        </div>
+        <div class="indirizzo">
+            <p>Indirizzo: <i class="fa fa-map-marked-alt"></i> Via R. Sanzio, 2 Rho - Milano (MI)</p>
+        </div>
+        <div class="diritti">
+            <p>&copy; 2025 Alessio Mazza. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+</body>
+</html>

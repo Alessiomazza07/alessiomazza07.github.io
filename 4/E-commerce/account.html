@@ -19,46 +19,101 @@
         <a href="alessiomazza07.github.io/4/E-commerce/account.html" class="navlink">Acc<i class="fa-solid fa-circle-user"></i>unt</a>
         <a href="alessiomazza07.github.io/4/E-commerce/cart.html" class="navlink"><i class="fa-solid fa-cart-shopping cart"></i></a>
     </nav>
-    <h1 class="title">Your account</h1>
     <div class="container">
-        <div class="data">Nome
-            <input required="" type="text" id="nome" placeholder="insert...">
-            
-            <button class="change" onclick="change(0,'nome')">Change</button>
+        <form class="form">
+            <h1 class="title">Your account</h1>
+            <div class="form-info">
+                <div class="input_container">
+                    <label class="input_label">First name</label>
+                    <div class="actual-input">
+                        <input placeholder="Enter your first name" type="text" class="input_field" id="first-name" required/>
+                        <button class="set" onclick="set(0,'first-name')">Set</button>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Last name</label>
+                    <div class="actual-input">
+                        <input placeholder="Enter your surname" type="text" class="input_field" id="last-name" required/>
+                        <button class="set" onclick="set(1,'last-name')">Set</button>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Username</label>
+                    <div class="actual-input">
+                        <input placeholder="Enter your username" type="text" class="input_field" id="user" required/>
+                        <button class="set" onclick="set(2,'user')">Set</button>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Email address</label>
+                    <div class="actual-input">
+                        <input placeholder="Enter your email" type="email" class="input_field" id="email" required/>
+                        <button class="set" onclick="set(4,'email')">Set</button>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Password</label>
+                    <div class="actual-input">
+                        <input placeholder="Enter your password" type="password" class="input_field" id="password" required/>
+                        <button class="set" onclick="set(3,'password')">Set</button>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Phone number</label>
+                    <div class="actual-input">
+                        <input placeholder="+00 000 000 0000" type="number" class="input_field" id="number" required/>
+                        <button class="set" onclick="set(5,'number')">Set</button>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">City</label>
+                    <div class="actual-input">
+                        <input placeholder="Enter your city" type="text" class="input_field" id="city" required/>
+                        <button class="set" onclick="set(6,'city')">Set</button>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">CAP</label>
+                    <div class="actual-input">
+                        <input placeholder="00000" type="number" class="input_field" id="cap" required/>
+                        <button class="set" onclick="set(7,'cap')">Set</button>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Address</label>
+                    <div class="actual-input">
+                        <input placeholder="Enter your address" type="text" class="input_field" id="address" required/>
+                        <button class="set" onclick="set(8,'address')">Set</button>
+                    </div>
+                </div>
+                <button class="logout" onclick="logout()">Logout</button>
+            </div>
+        </form>
         </div>
-        <div class="data">Cognome
-            <input required="" type="text" id="cognome" placeholder="insert...">
-            <button class="change" onclick="change(1,'cognome')">Change</button>
-        </div>
-        <div class="data">Username
-            <input required="" type="text" id="username" placeholder="insert...">
-            <button class="change" onclick="change(2,'username')">Change</button>
-        </div>
-        <div class="data">Email
-            <input required="" type="email" id="email" placeholder="insert...">
-            <button class="change" onclick="change(4,'email')">Change</button>
-        </div>
-        <div class="data">Password
-            <input required="" type="password" id="password" placeholder="insert...">
-            <button class="change" onclick="change(3,'password')">Change</button>
-        </div>
-        <div class="data">Telefono
-            <input required="" type="text" id="telefono" placeholder="insert...">
-            <button class="change" onclick="change(5,'telefono')">Change</button>
-        </div>
-        <div class="data">Città
-            <input required="" type="text" id="citta" placeholder="insert...">
-            <button class="change" onclick="change(6,'citta')">Change</button>
-        </div>
-        <div class="data">Cap
-            <input required="" type="text" id="cap" placeholder="insert...">
-            <button class="change" onclick="change(7,'cap')">Change</button>
-        </div>
-        <div class="data">Indirizzo
-            <input required="" type="text" id="indirizzo" placeholder="insert...">
-            <button class="change" onclick="change(8,'indirizzo')">Change</button>
-        </div>
-        <button class="logout" onclick="logout()">Logout</button>
     </div>
+    <footer>
+        <div class="logo">
+            <h1>E-commerce<br>Website</h1>
+        </div>
+        <div class="contatti">
+            <h2>Contatti</h2>
+            <a href="mailto: mazza.alessio@itiscannizaro.edu.it">
+                <i class="fa-solid fa-envelope"></i><p> mazza.alessio@itiscannizaro.edu.it</p>
+            </a>
+        </div>
+        <div class="social">
+            <h3>Follow us on</h3>
+            <a href="https://www.facebook.com/share/18XKKMzULi/"><i class="fa-brands fa-facebook"></i> <p>Facebook</p></a>
+            <a href="https://x.com/AlessioMazza20?t=I8jaFxF---Z-BsS_F0Vgbw&s=09"><i class="fa-brands fa-square-twitter"></i> <p>X</p></a>
+            <a href="https://www.instagram.com/ale.maz1907?igsh=bmk5MDZwNmk4YnI4"><i class="fa-brands fa-instagram"></i> <p>Instagram</p></a>
+            <a href="https://www.tiktok.com/@alemaz1907?_t=ZN-8uJgzEY6CIQ&_r=1"><i class="fa-brands fa-tiktok"></i> <p>TikTok</p></a>
+        </div>
+        <div class="indirizzo">
+            <p>Indirizzo: <i class="fa fa-map-marked-alt"></i> Via R. Sanzio, 2 Rho - Milano (MI)</p>
+        </div>
+        <div class="diritti">
+            <p>&copy; 2025 Alessio Mazza. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
 </body>
 </html>

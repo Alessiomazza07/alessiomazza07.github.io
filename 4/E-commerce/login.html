@@ -3,40 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/sign.css">
+    <script src="https://kit.fontawesome.com/e657377ddb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/login.css">
     <script src="./js/login.js" defer></script>
     <title>Login</title>
-    <style>
-        label {
-            width: 95%;
-        }
-        form.form {
-            padding: 1rem 2rem;
-        }
-    </style>
 </head>
 <body>
-    <form class="form" >
-        <p class="title">Login</p>
-        <div class="flname">
-            <label>
-                <input required="" placeholder="Firstname" type="text" class="input" id="first-name">
-            </label>
-            <label>
-                <input required="" placeholder="Lastname" type="text" class="input" id="last-name">
-            </label>
+    <div class="container">
+        <img src="login.png" alt="">
+        <form class="form">
+            <p class="title">Login</p>
+            <div class="form-info">
+                <div class="flname">
+                    <div class="input_container">
+                        <label class="input_label">First name</label>
+                        <input placeholder="Enter your first name" type="text" class="input_field" id="first-name" required/>
+                    </div>
+                    <div class="input_container">
+                        <label class="input_label">Last urname</label>
+                        <input placeholder="Enter your last name" type="text" class="input_field" id="last-name" required/>
+                    </div>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Username</label>
+                    <input placeholder="Enter your email" type="email" class="input_field" id="user" required/>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Password</label>
+                    <input placeholder="Enter your password" type="password" class="input_field" id="password" required/>
+                </div>
+                <div class="input_container">
+                    <label class="input_label">Confirm password</label>
+                    <input placeholder="Confirm your password" type="password" class="input_field" id="confirm-password" required/>
+                </div>
+                <button onclick="login(event)" class="submit">Submit</button>
+                <p class="problems"></p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="logo">
+            <h1>E-commerce<br>Website</h1>
         </div>
-        <label>
-            <input required="" placeholder="User" type="user" class="input" id="user">
-        </label>
-        <label>
-            <input required="" placeholder="Password" type="password" class="input" id="password">
-        </label>
-        <label>
-            <input required="" placeholder="Confirm password" type="password" class="input" id="confirm-password">
-        </label>
-        <button onclick="login(event)" class="submit">Submit</button>
-        <p class="problems"></p>
-    </form>
+        <div class="contatti">
+            <h2>Contatti</h2>
+            <a href="mailto: mazza.alessio@itiscannizaro.edu.it">
+                <i class="fa-solid fa-envelope"></i><p> mazza.alessio@itiscannizaro.edu.it</p>
+            </a>
+        </div>
+        <div class="social">
+            <h3>Follow us on</h3>
+            <a href="https://www.facebook.com/share/18XKKMzULi/"><i class="fa-brands fa-facebook"></i> <p>Facebook</p></a>
+            <a href="https://x.com/AlessioMazza20?t=I8jaFxF---Z-BsS_F0Vgbw&s=09"><i class="fa-brands fa-square-twitter"></i> <p>X</p></a>
+            <a href="https://www.instagram.com/ale.maz1907?igsh=bmk5MDZwNmk4YnI4"><i class="fa-brands fa-instagram"></i> <p>Instagram</p></a>
+            <a href="https://www.tiktok.com/@alemaz1907?_t=ZN-8uJgzEY6CIQ&_r=1"><i class="fa-brands fa-tiktok"></i> <p>TikTok</p></a>
+        </div>
+        <div class="indirizzo">
+            <p>Indirizzo: <i class="fa fa-map-marked-alt"></i> Via R. Sanzio, 2 Rho - Milano (MI)</p>
+        </div>
+        <div class="diritti">
+            <p>&copy; 2025 Alessio Mazza. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
 </body>
 </html>
