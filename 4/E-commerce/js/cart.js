@@ -13,7 +13,7 @@ let cart=JSON.parse(localStorage.getItem('cart')) || [];
 if(cart==null || cart.length==0){
     emptyCart();
 }else{
-    fetch('./prodotti.json')
+    fetch('https://alessiomazza07.github.io/4/E-commerce/json/prodotti.json')
     .then(response => {
       if (!response.ok)
         console.log('Problema con la fetch');

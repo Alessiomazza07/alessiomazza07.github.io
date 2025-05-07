@@ -64,6 +64,7 @@ function check(){
     return -1;
 }
 function fillUser(v){
+    const oldUser=localStorage.getItem('user');
     v.push(nome.value);
     v.push(cognome.value);
     v.push(oldUser[2]);
