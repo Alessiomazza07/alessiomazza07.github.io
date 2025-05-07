@@ -35,12 +35,13 @@ if(card!=null && card!=''){
 const oldUser=localStorage.getItem('user');
 function pay(event){
     event.preventDefault();
+    const oldUser=localStorage.getItem('user');
     console.log(check());
     if(check()>0) return;
     localStorage.removeItem('user');
     let newUser=[];
     let newCard=[];
-    fillUser(newUser);
+    fillUser(newUser,oldUser);
     fillCard(newCard);
     localStorage.setItem('user',newUser);
     localStorage.setItem('card',newCard);
@@ -63,11 +64,10 @@ function check(){
         address==null || address=="") return 4;
     return -1;
 }
-function fillUser(v){
-    const oldUser=localStorage.getItem('user');
+function fillUser(v,oldV){
     v.push(nome.value);
     v.push(cognome.value);
-    v.push(oldUser[2]);
+    v.push(oldV[2]);
     v.push(password.value);
     v.push(email.value);
     v.push(number.value);
