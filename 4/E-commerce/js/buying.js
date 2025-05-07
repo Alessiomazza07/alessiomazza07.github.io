@@ -26,7 +26,7 @@ const cap=document.getElementById('cap');
 cap.value=user[7];
 const address=document.getElementById('address');
 address.value=user[8];
-const card=localStorage.getItem('card').split(',');
+if(localStorage.getItem('card')!=null) var card=localStorage.getItem('card').split(',');
 if(card!=null && card!=''){
     document.getElementById('card-number').value=card[0];
     document.getElementById('expiry-date').value=card[1];
