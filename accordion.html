@@ -4,58 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="accordion.css">
-    <title>Accordion</title>
     <script src="https://kit.fontawesome.com/e657377ddb.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="">
+    <title>Accordion</title>
 </head>
 <body>
-    <div class="hamburger" class="dropdown">
-      <i class="fa-solid fa-bars"></i>
-      <div class="dropdown-content">
-        <a href="https://www.miur.gov.it/" style="padding:7px 8px 0 8px;"><img src="miurLOGO.png" height="55vh" width="55vh"></a>
-        <a href="https://alessiomazza07.github.io/index.html"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="https://alessiomazza07.github.io/siti.html"><i class="fa-brands fa-github"></i> Siti</a>
-        <a class="active" href="https://alessiomazza07.github.io/accordion.html"><i class="fa-solid fa-pen-to-square"></i>Accordion</a>
-        <a href="about.asp"><i class="fa-solid fa-circle-info"></i> About</a>
-     </div>
-   </div>
-   <ul class="navbar">
-      <li><a href="https://www.miur.gov.it/" style="padding:7px 8px 0 8px;"><img src="miurLOGO.png" height="55vh" width="55vh"></a></li>
-      <li><a href="https://alessiomazza07.github.io/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-      <li><a href="https://alessiomazza07.github.io/siti.html"><i class="fa-brands fa-github"></i> Siti</a></li>
-      <li><a class="active" href="https://alessiomazza07.github.io/accordion.html"><i class="fa-solid fa-pen-to-square"></i> Accordion</a></li>
-      <li><a href="about.asp"><i class="fa-solid fa-circle-info"></i> About</a></li>
-    </ul>
-    <h1>Esercizi Tecnologie e Progettazione di Sistemi</h1>
-    <div class="faq-box">
-      <div class="faq">
-        <input type="checkbox" id="faq1">
-        <label class="faq-label" for="faq1">Esercizi del 3° anno</label>
-        <div class="faq-content">
-            Durante il terzo anno sono stati svolti i seguenti esercizi: ricetta, gallery, 
-            box formattati, tabella formattata, box flottanti, wireframe, navigation bar, 
-            menù dropdown, favicon, icone, sprite, accordion.
-        </div>
-      </div>
-      <div class="faq">
-        <input type="checkbox" id="faq2">
-        <label class="faq-label" for="faq2">Esercizi del 4° anno</label>
-        <div class="faq-content">
-            Non è stato ancora svolto nessun esercizio. 
-        </div>
-      </div>
-      <div class="faq">
-        <input type="checkbox" id="faq3">
-        <label class="faq-label" for="faq3">Esercizi del 5° anno</label>
-        <div class="faq-content">
-          Non è stato ancora svolto nessun esercizio.
-        </div>
-      </div>
+    <div class="navbar">
+        <ul>
+            <li class="logo" ><a class="logo" href="https://www.mim.gov.it/"><img class="logo" src="images/logoMinistero.png"></a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="siti3.html"><i class="fa-brands fa-github"></i> 3 Anno</a></li>
+            <li><a href="siti4.html"><i class="fa-brands fa-github"></i> 4 Anno</a></li>
+            <li><a href="siti5.html"><i class="fa-brands fa-github"></i> 5 Anno</a></li>
+            <li><a href="projects.html"><i class="fa-brands fa-github"></i> Projects </a></li>
+            <li><a class="active" href="accordion.html"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> Accordion</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+        </ul>  
     </div>
-    <div class="footer">
-      <div id="contatti"><h1><i class="fa-solid fa-envelope"></i>Contatti</h1></div>
-      <h1 id="copyright"><strong>©</strong> Index 2024</h1>
-      <div id="links"><h1><i class="fa-solid fa-link"></i>Links</h1></div>
-  </div>
+    <div class="accordion">
+        <div class="card">
+            <input type="checkbox" id="box1">
+            <label class="card-label" for="box1">Esecizi del 3° anno</label>
+            <div class="card-content">Durante il terzo anno sono stati svolti i seguenti esercizi:
+                <ul class="site-list">
+                    <li>Ricetta</li>
+                    <li>Gallery</li>
+                    <li>Box formattati</li>
+                    <li>Tabella formattata</li>
+                    <li>Box flottanti</li>
+                    <li>Wireframe</li>
+                    <li>Navigation bar</li>
+                    <li>Menù dropdown</li>
+                    <li>Favicon</li>
+                    <li>Icone</li>
+                    <li>Sprite</li>
+                    <li>Accordion</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="box2">
+            <label class="card-label" for="box2">Esecizi del 4° anno</label>
+            <div class="card-content">Durante il quarto anno sono stati svolti i seguenti esercizi:
+                <ul class="site-list">
+                    <li>Calcolatrice v1.0</li>
+                    <li>Calcolatrice v2.0</li>
+                    <li>Calcolatrice v3.0</li>
+                    <li>Matrice rotante</li>
+                    <li>Anagrafica v1.0</li>
+                    <li>Anagrafica v2.0</li>
+                    <li>File reader tabella</li>
+                    <li>File reader grafico</li>
+                    <li>E-commerce</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="box3">
+            <label class="card-label" for="box3">Esecizi del 5° anno</label>
+            <div class="card-content">Non è stato ancora svolto nessun esercizio</div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <h1>E-commerce<br>Website</h1>
+        </div>
+        <div class="contatti">
+            <h2>Contatti</h2>
+            <a href="mailto: mazza.alessio@itiscannizaro.edu.it">
+                <i class="fa-solid fa-envelope"></i><p> mazza.alessio@itiscannizaro.edu.it</p>
+            </a>
+        </div>
+        <div class="social">
+            <h3>Follow us on</h3>
+            <a href="https://www.facebook.com/share/18XKKMzULi/"><i class="fa-brands fa-facebook"></i> <p>Facebook</p></a>
+            <a href="https://x.com/AlessioMazza20?t=I8jaFxF---Z-BsS_F0Vgbw&s=09"><i class="fa-brands fa-square-twitter"></i> <p>X</p></a>
+            <a href="https://www.instagram.com/ale.maz1907?igsh=bmk5MDZwNmk4YnI4"><i class="fa-brands fa-instagram"></i> <p>Instagram</p></a>
+            <a href="https://www.tiktok.com/@alemaz1907?_t=ZN-8uJgzEY6CIQ&_r=1"><i class="fa-brands fa-tiktok"></i> <p>TikTok</p></a>
+        </div>
+        <div class="indirizzo">
+            <p>Indirizzo: <i class="fa fa-map-marked-alt"></i> Via R. Sanzio, 2 Rho - Milano (MI)</p>
+        </div>
+        <div class="diritti">
+            <p>&copy; 2025 Alessio Mazza. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
 </body>
 </html>

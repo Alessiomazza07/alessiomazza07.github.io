@@ -1,177 +1,35 @@
-:root{
-  --palette-1: #37005F;
-  --palette-2: #50045B;
-  --palette-8: #D8BE89;
-  --palette-violascurissimo: #37005F;
-  --palette-violascuro: #5B1479;
-  --palette-viola: #7F2793;
-  --palette-violachiaro: #9C61AC;
-  --palette-violachiarissimo: #B89AC5;
-  --palette-chiaro: #E1D89F;
-  --palette-scuro: #1B1B1E;
-  --buttonHeight: 28vh;
-  --buttonWidth: 39%;
-}
-body {
-  background-color: var(--palette-violachiarissimo);
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.2rem;
-}
-*{
-  box-sizing: border-box;
-}
-/*inizio upper*/
-/*inizio navbar*/
-@media screen and (min-width: 710px){
-  ul.navbar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    background-color: var(--palette-violascurissimo);
-  }
-  li {
-    float: left;
-    width: fit-content;
-    height: fit-content;
-  }
-  li a {
-    font-size: xx-large;
-    display: block;
+@import url(layout.css);
+button{
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  li a:hover:not(.active) {
-    background-color: var(--palette-viola);
-  }
-  .active {
-    background-color: var(--palette-viola);
-  }
-  div.hamburger{
-    display: none;
-  }
-  }
-  /*fine navbar*/
-  /*inizio hamburger menu*/
-  /*questo hamburger è diverso dall'hamburger dell'index
-    sezione:div.hamburger{}*/
-  @media screen and (max-width: 710px){
-    div.hamburger{
-      background-color: var(--palette-violascurissimo);
-      height: 14vh;
-      width: 15vh;
-      padding: 2vh 2vh 1vh 2vh;
-      border-radius: 8px;
-      color: white;
-      float: left;
-      font-size: 250%;
-      margin: 3vw 0 0 81vw;
-      text-align: center;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: var(--palette-violascurissimo);
-      min-width: 160px;
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: white;
-      padding: 12px 16px;
-      font-size: 47.5%;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    .hamburger:hover .dropdown-content {
-      display: block;
-    }
-    a:hover:not(.active){
-      background-color: var(--palette-viola);
-    }
-    a:hover{
-      background-color: var(--palette-viola);
-    }
-    .active {
-      background-color: var(--palette-viola);
-    }
-  
-    ul.navbar{
-      display: none;
-    }
-  }
-/*fine hamburger menu*/
-/*fine upper*/
-/*inizio centro*/
-.logo{
-  height: 30vw;
-  width: 30vw;
-  float: left;
-  clear: left;
-  margin: 3vw;
+    outline: none;
+    border: none;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--palette-3),var(--palette-4), var(--palette-5));
 }
-div.center{
-  float: left;
-  width: 59vw;
-  margin: 5vw 3vw 3vw 0;
-  padding: 2.8vw;
-  background-color: var(--palette-viola);
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+.parag{
+  padding: 1rem 0;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--palette-1);
+  color: var(--palette-6);
+  margin: 0;
   border-radius: 8px;
+  height: fit-content;
+  justify-content: center;
 }
-div.center p{
-  font-size: 3vw;
-  color: white;
-  margin: 0;
+.parag h1{
+  margin: 0 1rem;
 }
-/*fine centro*/
-/* inizio footer */
-.footer{
-  background-color: var(--palette-violascurissimo);
-  height: 30vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 30% 20% 30%;
-  column-gap: 10%;
+.parag p{
+  margin: 1rem;
 }
-#contatti{
-  box-sizing: border-box;
-  background-color: var(--palette-viola);
-  border: 4px solid var(--palette-violascuro);
-  border-radius: 6px;
-  height: 15vh;
-  width: 24vw;
-  padding: 3vh 1vh;
-  margin: 7.5vh 0 0 10%;
-  text-align: center;
-  font-size: 2vw;
-}
-#contatti h1{
-  margin: 0;
-}
-h1#copyright{
-  font-size: 2vw;
-  height: 5vh;
-  margin-top: 25vh;
-  justify-self: center;
-  color: black;
-}
-#links{
-  box-sizing: border-box;
-  background-color: var(--palette-viola);
-  border: 4px solid var(--palette-violascuro);
-  border-radius: 6px;
-  height: 15vh;
-  width: 20vw;
-  padding: 3vh 1vh;
-  justify-self: right;
-  margin: 7.5vh 10% 0 0;
-  text-align: center;
-  font-size: 2vw;
-}
-#links h1{
-  margin: 0;
-}
-/* fine footer */
