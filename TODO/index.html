@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>My Todo List</h1>
+    <form id="newTask">
+        <h3>New Task</h3>
+        <div class="content">
+            <div class="info">
+                <input type="text" name="" id="title" placeholder="Enter a task title...">
+                <textarea name="" id="description" placeholder="Enter the description..."></textarea>
+            </div>
+            <button id="add" onclick="">Add Task</button>
+        </div>
+    </form>
+    <div class="filters">
+        <h3>Filters:</h3>
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+    </div>
+    <div id="container">
+    </div>
+    <p id="count">0 active tasks</p>
+</body>
+</html>
