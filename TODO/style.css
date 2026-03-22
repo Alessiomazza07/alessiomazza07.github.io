@@ -85,13 +85,13 @@ h3.title{
 div.btn-section{
     display: flex;
     gap: .5rem;
+    margin-left: auto;
+    margin-right: 2rem;
 }
 div.btn-section>button{
     padding: 3px 8px;
     border-radius: 5px;
     font-weight: 600;
-    margin-left: auto;
-    margin-right: 2rem;
 }
 button.edit{
     background-color: #77fd86;
